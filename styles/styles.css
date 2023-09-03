@@ -1,0 +1,266 @@
+body {
+    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    background-color: none;
+
+}
+
+
+header {
+    height: 100px;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+}
+
+/* Wrappers */
+
+.wrapper {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.doublewrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-content: center;
+}
+
+.equalwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 10px;
+}
+
+.profilepic {
+    max-width: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dark {
+    background-color: rgb(36, 36, 38);
+}
+
+.lighter {
+    background-color: rgb(209, 209, 214);
+}
+
+.lightest {
+    background-color: rgb(229, 229, 234);
+}
+
+/* Header design */
+
+/* Reflection */
+.units> :last-child {
+    transform: rotatex(180deg) translatey(35px);
+    mask-image: repeating-linear-gradient(transparent,
+            transparent 3px,
+            white 3px,
+            white 4px),
+        linear-gradient(transparent 50%, white 90%);
+    -webkit-mask-image: repeating-linear-gradient(transparent,
+            transparent 3px,
+            white 3px,
+            white 4px),
+        linear-gradient(transparent 50%, white 90%);
+}
+
+/* Original design */
+.units>* {
+    font: bolder 5rem/5rem;
+    background-color: #3eecac;
+    background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.units {
+    width: max-content;
+
+    padding: 0 10px;
+    display: inline-block;
+}
+
+/*Gradient text */
+.gradient-text {
+    background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white, 0;
+    padding: 10px;
+}
+
+/*Galleries*/
+
+/* Copyright (c) 2023 by Lubna (https://codepen.io/Lubna/pen/MWapdjE)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+.gallery {
+    box-sizing: border-box;
+}
+
+.gallery img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 66.6666666667%;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery {
+        padding-top: 400px;
+    }
+}
+
+.gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+}
+
+.gallery__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery__selector:checked+.gallery__img {
+    opacity: 1;
+}
+
+.gallery__selector:checked~.gallery__thumb>img {
+    box-shadow: 0 0 0 3px #3eecac;
+}
+
+/*Buttons*/
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 4px;
+    background-color: white;
+    z-index: -1;
+    transition: 200ms;
+}
+
+.btn::after {
+    content: attr(data);
+    font-size: 16px;
+    background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 200ms;
+}
+
+.btn:hover::before {
+    opacity: 50%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.btn:hover::after {
+    color: rgb(235, 235, 240);
+}
+
+/*Dark mode*/
+
+@media (prefers-color-scheme: dark) {
+
+    body,
+    .container,
+    .btn::before {
+        background-color: black;
+        color: rgb(235, 235, 240);
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: rgb(235, 235, 240);
+
+    }
+
+    .dark {
+        background-color: rgb(36, 36, 38);
+    }
+
+    .lighter {
+        background-color: rgb(44, 44, 46);
+    }
+
+    .lightest {
+        background-color: rgb(58, 58, 60);
+    }
+}
