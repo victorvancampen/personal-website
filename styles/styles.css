@@ -134,55 +134,61 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
-.gallery {
-    box-sizing: border-box;
+
+
+* {
+  box-sizing: border-box;
 }
 
-.gallery img {
-    max-width: 100%;
-    vertical-align: top;
+$max-img-width: 600px;
+$max-img-height: 400px;
+
+img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
 .gallery {
-    display: flex;
+  display: flex;
     margin: 10px auto;
-    max-width: 600px;
+    max-width: $max-img-width;
     position: relative;
-    padding-top: 66.6666666667%;
-}
-
-@media screen and (min-width: 600px) {
-    .gallery {
-        padding-top: 400px;
+    padding-top: $max-img-height/$max-img-width * 100%;
+    
+    @media screen and (min-width: $max-img-width){
+      padding-top: $max-img-height;
     }
-}
-
-.gallery__img {
+  
+  &__img {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-.gallery__thumb {
+  }
+  
+   &__thumb {
     padding-top: 6px;
     margin: 6px;
     display: block;
-}
-
-.gallery__selector {
+  }
+  
+  &__selector {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-}
-
-.gallery__selector:checked+.gallery__img {
-    opacity: 1;
-}
-
-.gallery__selector:checked~.gallery__thumb>img {
-    box-shadow: 0 0 0 3px #3eecac;
+    
+    &:checked {
+      + .gallery__img {
+        opacity: 1;
+      }
+      ~ .gallery__thumb > img {
+        box-shadow: 0 0 0 3px #3eecac;;
+      }
+    }
+  }
+  
+ 
 }
 
 /*Buttons*/
