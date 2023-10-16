@@ -45,13 +45,13 @@ main {
 
 .doublewrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     place-content: center;
 }
 
 .equalwrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     place-content: center;
     gap: 10px;
 }
