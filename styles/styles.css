@@ -51,7 +51,7 @@ main {
 
 .equalwrapper {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 2fr;
     place-content: center;
     gap: 10px;
 }
