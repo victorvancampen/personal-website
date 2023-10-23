@@ -49,9 +49,9 @@ main {
     place-content: center;
 }
 
-.equalwrapper {
+.blogwrapper {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
     place-content: center;
     gap: 10px;
 }
