@@ -10,7 +10,51 @@
     <link rel="stylesheet" href="../styles/styles.css" />
 
 
+<style>
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
 
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 33%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -38,31 +82,43 @@
                 <h1>Samenwerken?</h1>
             </div>
 
-            <img style="display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 90%;" src="../static/images/Wodanseiken600x400.jpg" alt="Wodanseiken">
-            <hr>
+           <div class="row">
+                <div class="column">
+                    <img src="../static/images/Wodanseiken600x400.jtpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../static/images/Pool2600x400.png" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../static/images/Bing3.png" style="width:100%">
+                </div>
+            </div>
+            </div>
+            
 
             <p>Voor de afronding van mijn studie breng ik graag mijn interesses in de praktijk.</p>
 
             <p>Misschien had je het al afgeleid uit mijn <a href="../blog/alle-posts.html">blog</a>, maar onderwerpen
-                die mij in het bijzonder interesseren zijn</p>
+                die mij in het bijzonder interesseren zijn:</p>
 
             <ul>
 
                 <li>Inpassing van infrastructuur, zoals infrastructuur voor energie, logistiek en afval</li>
+                <br>
                 <li>Ontwerp in brede zin, en specifiek de inzet van nieuwe technologie daarbij zoals kunstmatige
                     intelligentie</li>
+                <br>
                 <li>
                     Het tegengaan van hittestress en het bevorderen van levenskwaliteit van iedereen (in de stad en
                     daarbuiten) door slim ontwerp van de publieke ruimte
                 </li>
+                <br>
                 <li>
                     Daarmee samenhangend: toegankelijkheid van het landschap voor zo veel mogelijk mensen. Ik ben er van
                     overtuigd dat meer interactie met de natuur en het landschap door zo veel mogelijk mensen ons tot
                     betere inzichten kan brengen hoe de menselijke beschaving zich het beste kan verhouden tot de natuur
                 </li>
+                <br>
                 <li>
                     En: allerhande actuele onderwerpen, zoals politiek, nieuwe ontwerpen, verdozing, etc.
                 </li>
