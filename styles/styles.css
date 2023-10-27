@@ -8,16 +8,36 @@ body {
     padding-left: 10px;
 }
 
-
+/* Dark mode is standard*/
+body,
+.container,
+.btn::before {
+    background-color: black;
+    color: rgb(235, 235, 240);
+}
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    color: black;
-    background-color: none;
+    color: rgb(235, 235, 240);
 
 }
+
+.dark {
+    background-color: rgb(36, 36, 38);
+}
+
+.lighter {
+    background-color: rgb(44, 44, 46);
+}
+
+.lightest {
+    background-color: rgb(58, 58, 60);
+}
+
+
+
 
 
 header {
@@ -62,17 +82,7 @@ main {
     margin-bottom: auto;
 }
 
-.dark {
-    background-color: rgb(36, 36, 38);
-}
 
-.lighter {
-    background-color: rgb(209, 209, 214);
-}
-
-.lightest {
-    background-color: rgb(229, 229, 234);
-}
 
 /* Header design */
 
@@ -233,34 +243,36 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: rgb(235, 235, 240);
 }
 
-/*Dark mode*/
+/*Light mode*/
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 
     body,
     .container,
     .btn::before {
-        background-color: black;
-        color: rgb(235, 235, 240);
+        background-color: white;
+        color: black;
     }
 
     a:link,
     a:visited,
     a:hover,
     a:active {
-        color: rgb(235, 235, 240);
+        color: black;
+        background-color: none;
 
     }
 
-    .dark {
-        background-color: rgb(36, 36, 38);
-    }
+}
 
-    .lighter {
-        background-color: rgb(44, 44, 46);
-    }
+.dark {
+    background-color: rgb(36, 36, 38);
+}
 
-    .lightest {
-        background-color: rgb(58, 58, 60);
-    }
+.lighter {
+    background-color: rgb(209, 209, 214);
+}
+
+.lightest {
+    background-color: rgb(229, 229, 234);
 }
