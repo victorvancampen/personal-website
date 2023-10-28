@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 
+<style>
 
+modelviewer {
+
+width:90vw;
+    
+}
+    
+</style>
 
 
 </head>
@@ -37,12 +45,14 @@
         <!--Testpage-->
         <section>
 
-            
-<model-viewer src="../static/forestpack.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-</model-viewer>
+
+            <model-viewer 
+                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+                poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>
 
         </section>
     </main>
