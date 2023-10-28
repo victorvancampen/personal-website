@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testpage</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏞️</text></svg>" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+    <header class="wrapper">
+        <a href="../index.html">
+            <div class="units">
+                <div>
+                    <h1>LANDSCAPE MODE</h1>
+                </div>
+                <div>
+                    <h1>LANDSCAPE MODE</h1>
+                </div>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <h1>Test</h1>
+        </section>
+
+        <!--Testpage-->
+        <section>
+            <hr />
+
+            <model-viewer camera-controls touch-action="pan-y"
+                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+                src="../static/models/AvatarGlowingFlower.glb" alt="A Glowing Flower"></model-viewer>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="units">
+            <div>
+                <h1>CONTACT</h1>
+            </div>
+            <div>
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/vancampen/">
+                <button class="btn" data="LinkedIn"></button></a>
+        </div>
+        <div class="container">
+            <a href="https://www.instagram.com/landscapemode_nl">
+                <button class="btn" data="Instagram"></button></a>
+        </div>
+        <div class="container">
+            <a href="https://github.com/victorvancampen">
+                <button class="btn" data="GitHub"></button></a>
+        </div>
+    </footer>
+</body>
+
+</html>
