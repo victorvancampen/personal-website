@@ -17,7 +17,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 90%;
+            width: 960px;
             padding-top: 100px;
 
         }
@@ -50,7 +50,7 @@
 
 
             <model-viewer src="../static/AvatarGlowingFlower1.glb" ar ar-modes="webxr scene-viewer quick-look"
-                poster="poster.webp" disable-zoom shadow-intensity="1" camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+                poster="poster.webp" disable-zoom shadow-intensity="1" auto-rotate camera-orbit="30deg 70deg 160m"
                 field-of-view="1deg"> </model-viewer>
 
         </section>
