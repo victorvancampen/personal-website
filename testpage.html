@@ -10,22 +10,23 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 
-<style>
-
-    .modelviewercontainer {
-
-     display: block;
+    <style>
+        .modelviewercontainer {
+            display: block;
             margin-left: auto;
             margin-right: auto;
             max-width: 90%;
-        align-items: center;
-        height: 600px;
-             
-    }
-    
+            align-items: center;
 
-    
-</style>
+        }
+
+        model-viewer#forestpack {
+
+
+            height: 600px;
+
+        }
+    </style>
 
 
 </head>
@@ -54,11 +55,12 @@
 
             <div class="modelviewercontainer">
 
-            <model-viewer
-                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 2rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)" min-camera-orbit="-90deg 22.5deg 45m" max-camera-orbit="0deg 75deg 90m" min-field-of-view="30deg"
-                poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
-                
-            </model-viewer>
+                <model-viewer class="forestpack"
+                    camera-orbit="calc(-1.5rad + env(window-scroll-y) * 2rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)"
+                    min-camera-orbit="-90deg 22.5deg 45m" max-camera-orbit="0deg 75deg 90m" min-field-of-view="30deg"
+                    poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
+
+                </model-viewer>
             </div>
 
         </section>
