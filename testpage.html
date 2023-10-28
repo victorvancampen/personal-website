@@ -10,23 +10,8 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 
-    <style>
 
-        
-        model-viewer {
 
-            padding-top: 100px;
-     
-           
-
-  width: 90%;
-  height: 90%;
-
-</style>
-            
-
-        }
-    </style>
 
 </head>
 
@@ -53,9 +38,11 @@
         <section>
 
             
-            <model-viewer src="../static/AvatarGlowingFlower1.glb" ar ar-modes="webxr scene-viewer quick-look"
-                poster="poster.webp" disable-zoom shadow-intensity="1" auto-rotate camera-orbit="30deg 70deg 4m"
-                field-of-view="1deg"> </model-viewer>
+<model-viewer src="../static/forestpack.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+</model-viewer>
 
         </section>
     </main>
