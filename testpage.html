@@ -15,6 +15,7 @@
 modelviewer {
 
 width:90vw;
+height: 50vw;
     
 }
     
@@ -43,11 +44,11 @@ width:90vw;
         </section>
 
         <!--Testpage-->
-        <section>
+        <section style="align-items: center;">
 
 
             <model-viewer 
-                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
+                camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)"
                 poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
