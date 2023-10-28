@@ -11,7 +11,15 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 
     <style>
+        model-viewer {
 
+            display: flex;
+            margin: 10px auto;
+            width: 600px;
+            position: relative;
+            padding-top: 66.6666666667%;
+
+        }
     </style>
 
 </head>
@@ -40,7 +48,9 @@
 
 
 
-            <model-viewer src="../static/AvatarGlowingFlower1.glb" ar ar-modes="webxr scene-viewer quick-look" poster="poster.webp" disable-zoom shadow-intensity="1" camera-orbit="-45deg 55deg 200m" field-of-view="10deg"> </model-viewer>
+            <model-viewer src="../static/AvatarGlowingFlower1.glb" ar ar-modes="webxr scene-viewer quick-look"
+                poster="poster.webp" disable-zoom shadow-intensity="1" camera-orbit="-45deg 55deg 200m"
+                field-of-view="10deg"> </model-viewer>
 
         </section>
     </main>
