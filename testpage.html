@@ -17,11 +17,11 @@
      
             margin-left: auto;
             margin-right: auto;
-        min-height: 800px;
+
         
     }
     
-modelviewer {
+modelviewerforestpack {
 
 
             min-width: 600px;
@@ -59,7 +59,7 @@ modelviewer {
         <section class="modelviewercontainer">
 
 
-            <model-viewer 
+            <model-viewer class="modelviewerforestpack"
                 camera-orbit="calc(-1.5rad + env(window-scroll-y) * 2rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)" min-camera-orbit="-180deg 22.5deg 0deg" max-camera-orbit="90deg 75deg 0deg"
                 poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
                 
