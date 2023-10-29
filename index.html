@@ -8,6 +8,23 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏞️</text></svg>" />
   <link rel="stylesheet" href="styles/styles.css" />
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+<style>
+
+        model-viewer {
+
+
+                      display: block;
+            margin-left: auto;
+            margin-right: auto;
+          height: 40vw;
+          max-height: 600px;
+          width: 40vw;
+          max-width: 800px;
+          
+}
+  
+</style>
 </head>
 
 <body>
@@ -24,6 +41,17 @@
     </a>
   </header>
   <main>
+    <section>
+
+ <model-viewer
+                    camera-orbit="calc(-1.5rad + env(window-scroll-y) * 2rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)"
+                    min-camera-orbit="-90deg 22.5deg 75m" max-camera-orbit="0deg 75deg auto" min-field-of-view="45deg"
+                    poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
+
+                </model-viewer>
+      
+    </section>
+    
     <section class="wrapper lightest">
       <div class="doublewrapper">
         <img class="profilepic" src="https://pbs.twimg.com/profile_images/1309565124789841926/YB_UBF7G_400x400.jpg"
