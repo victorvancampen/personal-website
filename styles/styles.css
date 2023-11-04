@@ -271,6 +271,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .container {
         background-color: black;
         color: rgb(235, 235, 240), 0;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
 
@@ -323,7 +326,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .btn::before {
         background-color: black;
         color: rgb(235, 235, 240);
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: black;
         -webkit-background-clip: text;
         background-clip: text;
 
