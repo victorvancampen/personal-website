@@ -268,16 +268,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: rgb(235, 235, 240);
     }
 
-    .container {
-        background-color: black;
-        color: rgb(235, 235, 240), 0;
-    }
 
-    .container a{
-
-        background-color: none;
-
-    }
 
 
     a:link,
@@ -312,11 +303,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .gradient-text {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-        background-color: black;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
+    }
 
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white, 0;
+        padding: 10px;
     }
 
     .gallery__selector:checked~.gallery__thumb>img {
@@ -331,7 +328,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .btn::before {
         background-color: black;
         color: rgb(235, 235, 240);
-        
+
     }
 
     .btn::after {
