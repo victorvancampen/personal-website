@@ -307,6 +307,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .gradient-text {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+        background-color: black;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
