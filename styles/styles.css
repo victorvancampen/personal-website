@@ -301,6 +301,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     }
 
+   
+
+    .gallery__selector:checked~.gallery__thumb>img {
+        box-shadow: 0 0 0 3px #3eecac;
+    }
+
+/*
     .gradient-text {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
         -webkit-text-fill-color: transparent;
@@ -316,14 +323,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         padding: 10px;
     }
 
-    .gallery__selector:checked~.gallery__thumb>img {
-        box-shadow: 0 0 0 3px #3eecac;
-    }
-
-
-    .btn {
-        background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-    }
 
     .btn::before {
         background-color: black;
@@ -333,10 +332,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .btn::after {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+        color: rgb(235, 235, 240);
     }
 
     .btn:hover::after {
-        color: rgb(235, 235, 240);
+        color: black;
     }
+*/
 
 }
