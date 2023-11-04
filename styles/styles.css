@@ -273,6 +273,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: rgb(235, 235, 240), 0;
     }
 
+    .container a{
+
+        background-color: none;
+
+    }
 
 
     a:link,
