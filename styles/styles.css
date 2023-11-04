@@ -6,7 +6,7 @@ body {
     max-width: 960px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgb(220, 200, 165);
+    background-color: rgb(255, 240, 215);
     color: rgb(20, 20, 80);
 }
 
@@ -67,19 +67,19 @@ main {
 
 .dark {
     background-color: rgb(20, 20, 80);
-    color: rgb(220, 200, 165);
+    color: rgb(255, 240, 215);
 
 }
 
 
 .lighter {
     background-color: rgb(40, 40, 120);
-    color: rgb(220, 200, 165);
+    color: rgb(255, 240, 215);
 }
 
 .lightest {
     background-color: rgb(60, 60, 140);
-    color: rgb(220, 200, 165);
+    color: rgb(255, 240, 215);
 }
 
 .dark,
@@ -87,7 +87,7 @@ main {
 .lightest a {
 
     background-color: none;
-    color: rgb(220, 200, 165);
+    color: rgb(255, 240, 215);
 
 
 }
@@ -138,7 +138,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(220, 200, 165), 0;
+    background-color: rgb(255, 240, 215), 0;
     padding: 10px;
 }
 
@@ -224,7 +224,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 1px;
     bottom: 1px;
     border-radius: 4px;
-    background-color: rgb(220, 200, 165);
+    background-color: rgb(255, 240, 215);
     z-index: -1;
     transition: 200ms;
 }
@@ -232,7 +232,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .btn::after {
     content: attr(data);
     font-size: 16px;
-    background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+    background: linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -248,15 +248,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .btn:hover::after {
-    color: rgb(220, 200, 165);
+    color: rgb(255, 240, 215);
 }
 
 /*Dark mode*/
 
 @media (prefers-color-scheme: dark) {
 
-    body,
-    .container,
+    body {
+        background-color: black;
+        color: rgb(235, 235, 240);
+    }
+
+    .container {
+        background-color: black;
+        color: rgb(235, 235, 240), 0;
+    }
+
     .btn::before {
         background-color: black;
         color: rgb(235, 235, 240);
@@ -291,6 +299,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .gradient-text {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
 
     }
 
