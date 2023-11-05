@@ -232,7 +232,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 1px;
     bottom: 1px;
     border-radius: 4px;
-    /*background-color: rgb(255, 250, 215);*/
+    background-color: rgb(255, 250, 215);
     z-index: -1;
     transition: 200ms;
 }
@@ -305,6 +305,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .gallery__selector:checked~.gallery__thumb>img {
         box-shadow: 0 0 0 3px #3eecac;
+    }
+
+    .btn::before {
+
+        background-color: black;
+    }
+
+    .btn:hover::after {
+        color: black;
     }
 
 /*
