@@ -6,7 +6,7 @@ body {
     max-width: 960px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgb(255, 250, 215);
+    background-color: white;
     color: rgb(20, 20, 80);
 }
 
@@ -67,7 +67,7 @@ main {
 
 .dark {
     background-color: rgb(20, 20, 80);
-    color: rgb(255, 250, 215);
+    color: white;
 
 }
 
@@ -79,25 +79,25 @@ main {
 
 .lightest {
     background-color: rgb(60, 60, 140);
-    color: rgb(255, 250, 215);
+    color: white;
 }
 
 .dark a {
 
     background-color: none;
-    color: rgb(255, 250, 215);
+    color: white;
 }
 
 .lighter a {
 
     background-color: none;
-    color: rgb(255, 250, 215);
+    color: white;
 }
 
 .lightest a {
 
     background-color: none;
-    color: rgb(255, 250, 215);
+    color: white;
 }
 
 /* Header design */
@@ -146,7 +146,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 250, 215), 0;
+    background-color: white, 0;
     padding: 10px;
 }
 
@@ -232,7 +232,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 1px;
     bottom: 1px;
     border-radius: 4px;
-    background-color: rgb(255, 250, 215);
+    background-color: white;
     z-index: -1;
     transition: 200ms;
 }
@@ -256,7 +256,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .btn:hover::after {
-    color: rgb(255, 250, 215);
+    color: white;
 }
 
 /*Dark mode*/
