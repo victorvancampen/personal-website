@@ -307,9 +307,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         box-shadow: 0 0 0 3px #3eecac;
     }
 
+   /*Del?*/ .btn {
+
+        background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+
+    }
+
+    
+
+
     .btn::before {
 
         background-color: black;
+    }
+
+    /*Del?*/ .btn::after {
+
+        background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
     }
 
     .btn:hover::after {
@@ -318,9 +336,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .gradient-text {
         background: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-            -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
     /*
     .gradient-text {
