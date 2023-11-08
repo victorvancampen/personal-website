@@ -65,11 +65,7 @@ main {
     margin-bottom: auto;
 }
 
-.outline {
-    color: linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%);
-    -webkit-text-stroke: 1px linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%);
-    text-shadow: 0px 4px 4px linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%);
-}
+
 
 .dark {
     background-color: rgb(20, 20, 80);
