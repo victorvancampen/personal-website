@@ -1,103 +1,159 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testpage</title>
+    <title>James Leach</title>
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏞️</text></svg>" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>" />
+    <link rel="stylesheet" href="styles/james-styles.css" />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-
     <style>
-        .modelviewercontainer {
-/*            display: block;
+        model-viewer {
+
+            display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 90%; */
-             
-    
+            height: 40vw;
+            max-height: 600px;
+            width: 90vw;
+            max-width: 800px;
 
         }
-
-      model-viewer {
-
-
-                      display: block;
-            margin-left: auto;
-            margin-right: auto;
-          height: 40vw;
-          max-height: 600px;
-          width: 40vw;
-          max-width: 800px;
-          
-}
     </style>
-
-
 </head>
 
 <body>
     <header class="wrapper">
-        <a href="../index.html">
-            <div class="units">
-                <div>
-                    <h1>LANDSCAPE MODE</h1>
-                </div>
-                <div>
-                    <h1>LANDSCAPE MODE</h1>
-                </div>
+        <a href="index.html">
+            <div>
+                <h1>James Leach</h1>
             </div>
         </a>
     </header>
 
     <main>
-        <section>
-            <h1>Test</h1>
+
+
+        <section class="wrapper">
+            <div class="doublewrapper">
+                <img class="profilepic" src="../static/images/James.jpg" alt="A photo of James" />
+
+                <p>
+                    Hi, James Leach here! I am a senior content marketing manager with 9+ years of experience in content
+                    marketing, copywriting and digital marketing, both in-house and for marketing agencies.
+
+                    I have a proven track record of delivering content marketing and inbound marketing campaigns that
+                    generate results and revenue. I combine a keen-eye for editorial strategy with innovative creative
+                    thinking. I'm also a passionate content leader and coach, having already managed or supervised a
+                    team of 3 x content writers.
+                </p>
+            </div>
         </section>
 
-        <!--Testpage-->
+        <section>
+            <div class="gradient-text">
+
+                <p>I'm also an experienced freelance professional. Interested in working together? Please get in touch.
+                </p>
+
+            </div>
+
+            <div class="container">
+                <a href="https://www.linkedin.com/in/james-leachcopywriter-155b6062/">
+                    <button class="btn" data="Yes!"></button>
+                </a>
+            </div>
+        </section>
+
+
+
         <section>
 
-        <!--    <div class="modelviewercontainer"> -->
+            <model-viewer
+                camera-orbit="calc(-2rad + env(window-scroll-y) * 16rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 20m)"
+                min-camera-orbit="-90deg 22.5deg 75m" max-camera-orbit="0deg 75deg auto" min-field-of-view="45deg"
+                poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/desk.glb">
+                <div class="progress-bar hide" slot="progress-bar"></div>
 
-                <model-viewer
-                    camera-orbit="calc(-1.5rad + env(window-scroll-y) * 2rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 1m)"
-                    min-camera-orbit="-90deg 22.5deg 75m" max-camera-orbit="0deg 75deg auto" min-field-of-view="45deg"
-                    poster="poster.webp" shadow-intensity="1" disable-zoom src="../static/forestpack.glb">
-
-                </model-viewer>
-       <!--     </div> -->
+            </model-viewer>
 
         </section>
 
-        <section>
-            
+        <section class="gallery">
+            <div class="gallery__item">
+                <input type="radio" id="img-1" checked name="gallery" class="gallery__selector" />
+                <img class="gallery__img" src="../static/images/Garden600x400.png" alt="" />
+                <label for="img-1" class="gallery__thumb"><img src="../static/images/Garden150x100.png"
+                        alt="" /></label>
+            </div>
+            <div class="gallery__item">
+                <input type="radio" id="img-2" name="gallery" class="gallery__selector" />
+                <img class="gallery__img" src="../static/images/Ring600x400.png" alt="" />
+                <label for="img-2" class="gallery__thumb"><img src="../static/images/Ring150x100.png" alt="" /></label>
+            </div>
+            <div class="gallery__item">
+                <input type="radio" id="img-3" name="gallery" class="gallery__selector" />
+                <img class="gallery__img" src="../static/images/Map600x400.png" alt="" />
+                <label for="img-3" class="gallery__thumb"><img src="../static/images/Map150x100.png" alt="" /></label>
+            </div>
+            <div class="gallery__item">
+                <input type="radio" id="img-4" name="gallery" class="gallery__selector" />
+                <img class="gallery__img" src="../static/images/Pool600x400.png" alt="" />
+                <label for="img-4" class="gallery__thumb"><img src="../static/images/Pool150x100.png" alt="" /></label>
+            </div>
         </section>
+
+        <section class="wrapper lighter">
+            <div class="blogwrapper">
+
+                <p>
+                    "It's All Storytelling" is my newsletter about stories, fictional and non-fictional. From
+                    sci-fi to UK politics, I'll examine why we tell stories and how they shape us.
+                    Check out some previous editions here:
+                </p>
+
+                <div class="lightest">
+                    <ul>
+
+
+                        <li><a
+                                href="https://open.substack.com/pub/itsallstorytelling/p/the-week-in-storytelling-1st-october">The
+                                Week in Storytelling: 1st October, 2023</li>
+                        <li>
+                            <a href="">[Placeholder]</a>
+                        </li>
+                        <li>
+                            <a href="">[Placeholder]]</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </main>
 
-    <footer>
-        <div class="units">
-            <div>
-                <h1>CONTACT</h1>
-            </div>
-            <div>
-                <h1>CONTACT</h1>
-            </div>
+    <!--Contact-->
+    <footer id="footer">
+        <div>
+            <h1>CONTACT</h1>
         </div>
 
+
+
         <div class="container">
-            <a href="https://www.linkedin.com/in/vancampen/">
+            <a href="https://www.linkedin.com/in/james-leachcopywriter-155b6062/">
                 <button class="btn" data="LinkedIn"></button></a>
         </div>
         <div class="container">
-            <a href="https://www.instagram.com/landscapemode_nl">
-                <button class="btn" data="Instagram"></button></a>
+            <a href="https://itsallstorytelling.substack.com/">
+                <button class="btn" data="Substack"></button></a>
         </div>
-        <div class="container">
-            <a href="https://github.com/victorvancampen">
-                <button class="btn" data="GitHub"></button></a>
         </div>
     </footer>
 </body>
