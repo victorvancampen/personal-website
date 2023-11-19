@@ -1,5 +1,5 @@
 body {
-    font-family: "Georgia", "Gill Sans", Helvetica, sans-serif;
+    font-family: "Gill Sans", Helvetica, sans-serif;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -55,8 +55,8 @@ footer {
 }
 
 .profilepic {
-    max-width: 100%;
-    max-height: 50vw;
+    max-width: 30%;
+    max-height: 30%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -252,7 +252,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content: attr(data);
     font-size: 16px;
     background:
-    linear-gradient(19deg, #8a2387, #e94057, #f27121 100%);
+        linear-gradient(19deg, #8a2387, #e94057, #f27121 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
