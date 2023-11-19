@@ -43,7 +43,7 @@ footer {
 
 .doublewrapper {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     place-content: center;
 }
 
