@@ -62,13 +62,13 @@ footer {
     border-radius: 3px;
 }
 
-/*.dark {
+.dark {
     background-color: rgb(0, 0, 0);
     color: white;
 
 }
 
-.lighter {
+/*.lighter {
     background-color: rgb(0, 0, 0)
     color: rgb(255, 250, 240);
 }
