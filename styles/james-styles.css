@@ -55,7 +55,8 @@ footer {
 }
 
 .profilepic {
-    max-width: 90%;
+    max-width: 100%;
+    max-height: 50vw;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -230,7 +231,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: relative;
     z-index: 1;
     border-radius: 5px;
-    background: /*linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%)*/white;
+    background: linear-gradient(19deg, #8a2387, #e94057, #f27121 100%);
     cursor: pointer;
 }
 
@@ -250,7 +251,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .btn::after {
     content: attr(data);
     font-size: 16px;
-    background: /*linear-gradient(19deg, rgb(20, 20, 80) 0%, rgb(253, 94, 83) 100%)*/white;
+    background:
+    linear-gradient(19deg, #8a2387, #e94057, #f27121 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -286,13 +288,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     }
 
-    /*.outline {
+    .outline {
         color: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
         -webkit-text-stroke: 1px linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
         text-shadow: 0px 4px 4px linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
     }
 
-    .dark {
+    /*.dark {
         background-color: rgb(36, 36, 38);
         color: rgb(235, 235, 240);
     }
@@ -320,13 +322,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         box-shadow: 0 0 0 3px #3eecac;
     }*/
 
-   .btn {
+    .btn {
 
-        background: /*linear-gradient(19deg, #3eecac 0%, #ee74e1 100%)*/black;
+        background:
+            linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
 
     }
 
-    
+
 
 
     .btn::before {
@@ -336,7 +339,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .btn::after {
 
-        background: /*linear-gradient(19deg, #3eecac 0%, #ee74e1 100%)*/black;
+        background:
+            linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
