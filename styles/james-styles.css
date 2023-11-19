@@ -76,7 +76,7 @@ footer {
 .lightest {
     background-color: rgb(0, 0, 0);
     color: white;
-}
+} */
 
 .dark a {
 
@@ -84,7 +84,7 @@ footer {
     color: white;
 }
 
-.lighter a {
+/*.lighter a {
 
     background-color: none;
     color: white;
