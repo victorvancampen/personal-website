@@ -56,8 +56,8 @@ footer {
 
 .profilepic {
     background-image: linear-gradient(19deg, #8a2387, #e94057, #f27121 100%);
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 90%;
+    max-height: 90%;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 3px;
