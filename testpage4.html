@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/fkn5fnk.css">
+
+
+    <style>
+        model-viewer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100vw;
+            height: 90vh;
+        }
+
+        body {
+            font-family: "atyp-kido-variable", sans-serif;
+            font-variation-settings: "wght" 280;
+        }
+    </style>
+</head>
+
+<body>
+    <model-viewer src="../static/Torus_Final.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+        tone-mapping="agx" poster="poster.webp" shadow-intensity="0.5" autoplay camera-target="0m 0m 0m"
+        min-camera-orbit="85deg 85deg auto" max-camera-orbit="95deg 95deg auto" environment-image="../static/Musis.webp"
+        shadow-softness="1">
+        <div style="max-width: 50%; max-height: 50%;">
+            <a href="https://www.landscapemode.nl">Blog</a>
+            <a href="https://www.landscapemode.nl">About</a>
+            <a href="https://www.landscapemode.nl">Portfolio</a>
+            <a href="https://www.landscapemode.nl">Contact</a>
+            <a href="https://www.landscapemode.nl">CV</a>
+        </div>
+    </model-viewer>
+
+</body>
+
+</html>
