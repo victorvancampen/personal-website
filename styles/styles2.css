@@ -20,14 +20,14 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     height: 80vh; /* The header spans 8/10 of the viewport height */
-    padding: 2rem;
+    padding: 1.5rem; /* Slightly reduced padding */
     flex-wrap: nowrap; /* Prevent stacking of text and .gif */
     overflow: hidden; /* Prevent overflow of content */
 }
 
 .text-container {
     width: 66.66%; /* Text section takes up 2/3 of the screen width */
-    padding-right: 2rem;
+    padding-right: 1.5rem; /* Adjusted right padding */
     height: 100%;
 }
 
@@ -36,6 +36,7 @@ h1 {
     font-size: 3rem;
     color: #222;
     margin-bottom: 1rem;
+    text-align: left; /* Align the heading to the left */
 }
 
 p {
