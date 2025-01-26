@@ -21,7 +21,7 @@ body {
     align-items: flex-start;
     height: 80vh; /* The header spans 8/10 of the viewport height */
     padding: 2rem;
-    flex-wrap: wrap; /* Ensures flexibility for mobile */
+    flex-wrap: nowrap; /* Prevent stacking of text and .gif */
     overflow: hidden; /* Prevent overflow of content */
 }
 
@@ -141,26 +141,16 @@ a {
 /* Small adjustments for responsiveness */
 @media (max-width: 768px) {
     .landing-container {
-        flex-direction: column;
-        align-items: center;
-        height: auto; /* Allow it to adjust on smaller screens */
+        flex-direction: row; /* Keep text and gif side by side on mobile */
+        align-items: flex-start;
+        height: 80vh; /* Ensure the container takes up 80% of the viewport height */
+        overflow: hidden;
     }
 
     .text-container {
-        width: 100%; /* Text takes up full width */
+        width: 66.66%; /* Text takes up 2/3 of the width */
         padding: 1rem;
     }
 
     .gif-container {
-        width: 100%; /* GIF takes up full width */
-        height: 40vh; /* Adjust height to be responsive */
-    }
-
-    .gallery-container {
-        margin-top: -5vh; /* Pull the gallery up slightly on mobile */
-    }
-
-    .gallery-item img {
-        object-fit: cover;
-    }
-}
+        width: 3
