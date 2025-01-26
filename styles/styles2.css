@@ -7,12 +7,15 @@
 
 /* Body Styles */
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Atyp', sans-serif; /* Change the font to Atyp for body */
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
+/* Importing Atyp Font */
+@import url('https://fonts.googleapis.com/css2?family=Atyp:wght@400;500&display=swap');
 
 /* Header Container */
 .landing-container {
@@ -26,13 +29,13 @@ body {
 }
 
 .text-container {
-    width: 66.66%; /* Text section takes up 2/3 of the screen width */
+    width: 33.33%; /* Text section now takes up 1/3 of the screen width */
     padding-right: 1.5rem; /* Adjusted right padding */
     height: 100%;
 }
 
 h1 {
-    font-family: 'Akzidenz Grotesk', sans-serif;
+    font-family: 'Atyp', sans-serif; /* Use Atyp font for the heading */
     font-size: 2.4rem; /* Reduced size by 20% */
     color: #222;
     margin-bottom: 1rem;
@@ -61,18 +64,19 @@ p {
     text-decoration: underline;
 }
 
-/* GIF Container */
+/* GIF Container with 3:4 Aspect Ratio */
 .gif-container {
-    width: 33.33%; /* GIF section takes up 1/3 of the screen width */
-    height: 80vh; /* The GIF also spans 8/10 of the viewport height */
-    overflow: hidden;
+    width: 66.66%; /* GIF section now takes up 2/3 of the screen width */
     position: relative;
+    height: 0;
+    padding-top: 133.33%; /* Aspect ratio 3:4 (height = 2/3 width) */
+    overflow: hidden;
 }
 
 .gif-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image scales while maintaining aspect ratio */
 }
 
 /* Image Gallery Section */
@@ -150,13 +154,13 @@ a {
     }
 
     .text-container {
-        width: 66.66%; /* Text takes up 2/3 of the width */
+        width: 33.33%; /* Text takes up 1/3 of the width */
         padding: 1rem;
     }
 
     .gif-container {
-        width: 33.33%; /* GIF takes up 1/3 of the width */
-        height: 70vh; /* Same height as text and GIF container */
+        width: 66.66%; /* GIF takes up 2/3 of the width */
+        padding-top: 133.33%; /* Maintain 3:4 aspect ratio */
     }
 
     .gallery-container {
@@ -178,12 +182,13 @@ a {
     }
 
     .text-container {
-        width: 60%; /* Text section will occupy 60% of the width */
+        width: 33.33%; /* Text section will occupy 1/3 of the width */
         padding-right: 1rem;
     }
 
     .gif-container {
-        width: 40%; /* GIF section will occupy 40% of the width */
+        width: 66.66%; /* GIF section will occupy 2/3 of the width */
+        padding-top: 133.33%; /* Maintain 3:4 aspect ratio */
     }
 
     .gallery-container {
