@@ -35,11 +35,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the text */
+    margin-top: 33%; /* Push the text section down about 2/3 of the viewport height */
 }
 
 h1 {
     font-family: 'Atyp', sans-serif; /* Use Atyp font for the heading */
-    font-size: 2.4rem; /* Reduced size by 20% */
+    font-size: 1.92rem; /* Decreased size by 20% */
     color: #222;
     margin-bottom: 1rem;
     text-align: left; /* Align the heading to the left */
@@ -164,37 +165,4 @@ a {
     }
 
     .gif-container {
-        width: 66.66%; /* GIF takes up 2/3 of the width */
-        padding-top: 133.33%; /* Maintain 3:4 aspect ratio */
-    }
-
-    .gallery-container {
-        margin-top: 2rem; /* Add more space between the sections on mobile */
-    }
-
-    .gallery-item img {
-        object-fit: cover;
-    }
-}
-
-/* Adjustments for Horizontal Screens (Landscape Mode on Mobile) */
-@media (max-width: 768px) and (orientation: landscape) {
-    .landing-container {
-        flex-direction: row; /* Keep text and gif side by side */
-        height: auto; /* Allow sections to adjust their height */
-        margin-bottom: 2rem; /* Add space between sections */
-        overflow: hidden;
-    }
-
-    .text-container {
-        width: 33.33%; /* Text section will occupy 1/3 of the width */
-        padding-right: 1rem;
-    }
-
-    .gif-container {
-        width: 66.66%; /* GIF section will occupy 2/3 of the width */
-        padding-top: 133.33%; /* Maintain 3:4 aspect ratio */
-    }
-
-    .gallery-container {
-        margin-top: 2rem; /* Ensure 
+        wi
