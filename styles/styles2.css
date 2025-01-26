@@ -21,7 +21,7 @@ body {
 .landing-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Align items vertically centered */
     height: 80vh; /* The header spans 8/10 of the viewport height */
     padding: 1.5rem; /* Slightly reduced padding */
     flex-wrap: nowrap; /* Prevent stacking of text and .gif */
@@ -32,6 +32,9 @@ body {
     width: 33.33%; /* Text section now takes up 1/3 of the screen width */
     padding-right: 1.5rem; /* Adjusted right padding */
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
 }
 
 h1 {
@@ -40,6 +43,8 @@ h1 {
     color: #222;
     margin-bottom: 1rem;
     text-align: left; /* Align the heading to the left */
+    letter-spacing: 2px; /* Adds letter-spacing between letters */
+    line-height: 1.1; /* Ensure "Landscape" and "Mode" stay on separate lines */
 }
 
 p {
@@ -122,13 +127,13 @@ footer {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem; /* Increased gap between icons */
     z-index: 2;
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 2rem; /* Increased gap between LinkedIn and Instagram icons */
 }
 
 .social-icon img {
@@ -192,10 +197,4 @@ a {
     }
 
     .gallery-container {
-        margin-top: 2rem; /* Ensure space between gallery and previous section */
-    }
-
-    .gallery-item img {
-        object-fit: cover;
-    }
-}
+        margin-top: 2rem; /* Ensure 
