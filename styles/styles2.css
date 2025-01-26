@@ -83,7 +83,7 @@ p {
     padding: 2rem 0;
     display: flex;
     justify-content: center; /* Center the gallery */
-    margin-top: -10vh; /* Pull the gallery up so a portion of it is visible at the bottom of the screen */
+    margin-top: 2rem; /* Ensure space between gallery and the section above */
 }
 
 .gallery {
@@ -143,8 +143,9 @@ a {
     .landing-container {
         flex-direction: row; /* Keep text and gif side by side on mobile */
         align-items: flex-start;
-        height: 80vh; /* Ensure the container takes up 80% of the viewport height */
+        height: 70vh; /* Adjust container height to ensure proper spacing */
         overflow: hidden;
+        margin-bottom: 1rem; /* Add space between the sections */
     }
 
     .text-container {
@@ -153,4 +154,15 @@ a {
     }
 
     .gif-container {
-        width: 3
+        width: 33.33%; /* GIF takes up 1/3 of the width */
+        height: 70vh; /* Same height as text and GIF container */
+    }
+
+    .gallery-container {
+        margin-top: 2rem; /* Add more space between the sections on mobile */
+    }
+
+    .gallery-item img {
+        object-fit: cover;
+    }
+}
