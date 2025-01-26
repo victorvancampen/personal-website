@@ -33,7 +33,7 @@ body {
 
 h1 {
     font-family: 'Akzidenz Grotesk', sans-serif;
-    font-size: 3rem;
+    font-size: 2.4rem; /* Reduced size by 20% */
     color: #222;
     margin-bottom: 1rem;
     text-align: left; /* Align the heading to the left */
@@ -161,6 +161,33 @@ a {
 
     .gallery-container {
         margin-top: 2rem; /* Add more space between the sections on mobile */
+    }
+
+    .gallery-item img {
+        object-fit: cover;
+    }
+}
+
+/* Adjustments for Horizontal Screens (Landscape Mode on Mobile) */
+@media (max-width: 768px) and (orientation: landscape) {
+    .landing-container {
+        flex-direction: row; /* Keep text and gif side by side */
+        height: auto; /* Allow sections to adjust their height */
+        margin-bottom: 2rem; /* Add space between sections */
+        overflow: hidden;
+    }
+
+    .text-container {
+        width: 60%; /* Text section will occupy 60% of the width */
+        padding-right: 1rem;
+    }
+
+    .gif-container {
+        width: 40%; /* GIF section will occupy 40% of the width */
+    }
+
+    .gallery-container {
+        margin-top: 2rem; /* Ensure space between gallery and previous section */
     }
 
     .gallery-item img {
