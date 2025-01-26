@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Container */
+.landing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full height of the screen */
+    padding: 2rem;
+}
+
+/* Text Section */
+.text-container {
+    max-width: 60%; /* Text container takes up 60% of the page */
+    padding-right: 2rem;
+}
+
+h1 {
+    font-family: 'Akzidenz Grotesk', sans-serif;
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.links a {
+    font-size: 1.125rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* GIF Container */
+.gif-container {
+    max-width: 35%; /* Takes up one-third of the screen horizontally */
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image Gallery Section */
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* Enables horizontal scrolling with snap */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    gap: 1rem;
+}
+
+.gallery-item {
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    scroll-snap-align: start; /* Ensures each item is aligned at the start of the container */
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Navigation Arrows (pure CSS for buttons) */
+.gallery-container::before,
+.gallery-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gallery-container::before {
+    left: 10px;
+    content: '←';
+    font-size: 1.5rem;
+}
+
+.gallery-container::after {
+    right: 10px;
+    content: '→';
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Link Styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Small adjustments for responsiveness */
+@media (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .gif-container {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    /* Image Gallery Adjustments */
+    .gallery-container {
+        padding: 1rem;
+    }
+
+    .gallery-item img {
+        object-fit: cover;
+    }
+}
