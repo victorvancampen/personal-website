@@ -20,11 +20,11 @@ body {
     align-items: center;
     height: 100vh; /* Full height of the screen */
     padding: 2rem;
+    flex-wrap: wrap; /* Ensures flexibility for mobile */
 }
 
-/* Text Section */
 .text-container {
-    max-width: 60%; /* Text container takes up 60% of the page */
+    max-width: 65%; /* Text container takes up 65% of the page */
     padding-right: 2rem;
 }
 
@@ -59,9 +59,10 @@ p {
 
 /* GIF Container */
 .gif-container {
-    max-width: 35%; /* Takes up one-third of the screen horizontally */
+    width: 30%; /* Always takes up 30% of the screen */
     height: 100vh; /* Full screen height */
     overflow: hidden;
+    position: relative;
 }
 
 .gif-container img {
@@ -133,13 +134,14 @@ p {
 
 /* Footer */
 footer {
-    position: fixed;
+    position: relative;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 1rem;
+    z-index: 2;
 }
 
 .social-links {
@@ -171,11 +173,10 @@ a {
     }
 
     .gif-container {
-        max-width: 100%;
-        height: 300px;
+        width: 100%; /* Takes full width on mobile */
+        height: 300px; /* Adjust height */
     }
 
-    /* Image Gallery Adjustments */
     .gallery-container {
         padding: 1rem;
     }
