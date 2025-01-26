@@ -11,6 +11,7 @@ body {
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header Container */
@@ -21,6 +22,7 @@ body {
     height: 80vh; /* The header spans 8/10 of the viewport height */
     padding: 2rem;
     flex-wrap: wrap; /* Ensures flexibility for mobile */
+    overflow: hidden; /* Prevent overflow of content */
 }
 
 .text-container {
@@ -140,16 +142,18 @@ a {
 @media (max-width: 768px) {
     .landing-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        height: auto; /* Allow it to adjust on smaller screens */
     }
 
     .text-container {
         width: 100%; /* Text takes up full width */
+        padding: 1rem;
     }
 
     .gif-container {
         width: 100%; /* GIF takes up full width */
-        height: 300px; /* Adjust height */
+        height: 40vh; /* Adjust height to be responsive */
     }
 
     .gallery-container {
