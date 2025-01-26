@@ -17,15 +17,16 @@ body {
 .landing-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100vh; /* Full height of the screen */
+    align-items: flex-start;
+    height: 80vh; /* The header spans 8/10 of the viewport height */
     padding: 2rem;
     flex-wrap: wrap; /* Ensures flexibility for mobile */
 }
 
 .text-container {
-    width: 66.66%; /* Always takes 2/3 of the screen width */
+    width: 66.66%; /* Text section takes up 2/3 of the screen width */
     padding-right: 2rem;
+    height: 100%;
 }
 
 h1 {
@@ -59,8 +60,8 @@ p {
 
 /* GIF Container */
 .gif-container {
-    width: 33.33%; /* Always takes 1/3 of the screen width */
-    height: 100vh; /* Full screen height */
+    width: 33.33%; /* GIF section takes up 1/3 of the screen width */
+    height: 80vh; /* The GIF also spans 8/10 of the viewport height */
     overflow: hidden;
     position: relative;
 }
@@ -76,10 +77,11 @@ p {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 2rem 0;
     display: flex;
     justify-content: center; /* Center the gallery */
+    margin-top: -10vh; /* Pull the gallery up so a portion of it is visible at the bottom of the screen */
 }
 
 .gallery {
@@ -93,7 +95,7 @@ p {
 .gallery-item {
     flex: 0 0 auto; /* Prevents items from shrinking */
     scroll-snap-align: start; /* Ensures each item is aligned at the start of the container */
-    width: 80vw; /* Ensure the images take up the screen width */
+    width: 80vw; /* Images take up the screen width */
     margin: 0 10px; /* Space between images */
     position: relative;
 }
@@ -137,21 +139,21 @@ a {
 /* Small adjustments for responsiveness */
 @media (max-width: 768px) {
     .landing-container {
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .text-container {
-        width: 66.66%; /* Ensures text takes up 2/3 of screen width */
+        width: 100%; /* Text takes up full width */
     }
 
     .gif-container {
-        width: 33.33%; /* Ensures gif takes up 1/3 of screen width */
+        width: 100%; /* GIF takes up full width */
         height: 300px; /* Adjust height */
     }
 
     .gallery-container {
-        padding: 1rem;
+        margin-top: -5vh; /* Pull the gallery up slightly on mobile */
     }
 
     .gallery-item img {
